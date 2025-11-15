@@ -1,1 +1,4 @@
-# data-analyst-internship
+SALES DATA:
+
+I worked on cleaning the raw sales dataset to make it structured and analysis-ready. The original data had a few common issues: blank rows, customer names split across multiple rows, inconsistent product names, and missing or duplicated entries.
+To clean it, I removed blank rows and merged split customer names using Excel formulas like =CONCATENATE(A2," ",B2) to combine first and last names. I standardized the date format using =TEXT(DateCell,"yyyy-mm-dd") and ensured each sale had one complete row with all relevant fields in order: Sale_ID, Date, Customer_Name, Product, Quantity, Unit_Price, Total_Amount, Currency, and Region. Product names were corrected using =PROPER() to make the casing consistent, and the Region column was filled based on the original data. Totals were verified with =Quantity*Unit_Price to ensure correctness.
